@@ -1,0 +1,62 @@
+@font-face {
+	font-family: 'ubuntuMono';
+	src: url('fonts/UbuntuMono-R.ttf');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'ubuntuMono'
+	src: url('fonts/UbuntuMono-B.ttf');
+	font-weight: bold;
+}
+
+html {
+	box-sizing: border-box;
+}
+* {
+	
+	font-family: 'ubuntuMono';	
+}
+
+#gridContainer {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 1fr 3fr 3fr;
+}
+
+#sideBar {
+	display: grid;
+
+	grid-column: 1 / 2;
+	grid-row: 1 / 4;
+
+}
+
+#topBar {
+	display: grid;
+
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+
+}
+#projectArea {
+	grid-column: 2 / 3;
+	grid-row: 2 / 4;
+	
+}
+
+#taskContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 200px);
+}
+#teamAnnouncementsContainer {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+#quickContactsContainer {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+
+
