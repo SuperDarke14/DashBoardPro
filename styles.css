@@ -41,19 +41,29 @@ html {
 #projectArea {
 	grid-column: 2 / 3;
 	grid-row: 2 / 4;
-	
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-template-rows: 1fr 6fr 1fr 6fr;
 }
 
+
+
 #taskContainer {
+	grid-column: 1 / 2;
+	grid-row: 1 / 5;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 200px);
 }
 #teamAnnouncementsContainer {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
 	display: grid;
 	grid-template-columns: 1fr;
 }
 
 #quickContactsContainer {
+	grid-column: 2 / 3;
+	grid-row: 4 / 5;
 	display: grid;
 	grid-template-columns: 1fr;
 }
